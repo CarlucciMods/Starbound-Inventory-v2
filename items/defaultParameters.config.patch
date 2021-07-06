@@ -1,0 +1,11 @@
+/*
+If you already use an alternative max stack mod, this won't change anything.
+*/
+
+[
+  [
+    { "op": "test", "path": "/defaultMaxStack", "value": 1000 },
+	{ "op": "replace", "path": "/defaultMaxStack", "value": 9999 }
+  ]
+]
+

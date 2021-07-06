@@ -1,0 +1,935 @@
+[
+  [
+    {
+      "op" : "replace",
+      "path" : "/bagConfig",
+      "value" : {
+        "mainBag" : {
+          "order" : 1,
+          "tabButtonData" : "showMainGrid",
+          "itemGrid" : "mainItemGrid",
+          "newItemMarker" : "newGeneralItems"
+        },
+        "armoryBag" : {
+          "order" : 2,
+          "tabButtonData" : "showArmoryGrid",
+          "itemGrid" : "armoryItemGrid",
+          "newItemMarker" : "newArmoryItems"
+        },
+        "materialBag" : {
+          "order" : 3,
+          "tabButtonData" : "showTileGrid",
+          "itemGrid" : "tileItemGrid",
+          "newItemMarker" : "newTileItems"
+        },
+        "objectBag" : {
+          "order" : 4,
+          "tabButtonData" : "showObjectGrid",
+          "itemGrid" : "objectItemGrid",
+          "newItemMarker" : "newObjectItems"
+        },
+        "objectBag2" : {
+          "order" : 5,
+          "tabButtonData" : "showObjectGrid2",
+          "itemGrid" : "objectItemGrid2",
+          "newItemMarker" : "newObjectItems2"
+        },
+        "reagentBag" : {
+          "order" : 6,
+          "tabButtonData" : "showReagentGrid",
+          "itemGrid" : "reagentItemGrid",
+          "newItemMarker" : "newReagentItems"
+        },
+        "foodBag" : {
+          "order" : 7,
+          "tabButtonData" : "showFoodGrid",
+          "itemGrid" : "foodItemGrid",
+          "newItemMarker" : "newFoodItems"
+        },
+        "farmBag" : {
+          "order" : 8,
+          "tabButtonData" : "showFarmGrid",
+          "itemGrid" : "farmItemGrid",
+          "newItemMarker" : "newFarmItems"
+        },
+        "hobbyBag" : {
+          "order" : 9,
+          "tabButtonData" : "showHobbyGrid",
+          "itemGrid" : "hobbyItemGrid",
+          "newItemMarker" : "newHobbyItems"
+        },
+        "vehicleBag" : {
+          "order" : 10,
+          "tabButtonData" : "showVehicleGrid",
+          "itemGrid" : "vehicleItemGrid",
+          "newItemMarker" : "newVehicleItems"
+        },
+        "toolBag" : {
+          "order" : 11,
+          "tabButtonData" : "showToolGrid",
+          "itemGrid" : "toolItemGrid",
+          "newItemMarker" : "newToolItems"
+        },
+        "liquidBag" : {
+          "order" : 12,
+          "tabButtonData" : "showLiquidGrid",
+          "itemGrid" : "liquidItemGrid",
+          "newItemMarker" : "newLiquidItems"
+        },
+        "medsBag" : {
+          "order" : 13,
+          "tabButtonData" : "showMedsGrid",
+          "itemGrid" : "medsItemGrid",
+          "newItemMarker" : "newMedsItems"
+        },
+        "augmentsBag" : {
+          "order" : 14,
+          "tabButtonData" : "showAugmentsGrid",
+          "itemGrid" : "augmentsItemGrid",
+          "newItemMarker" : "newAugmentsItems"
+        },
+        "transportBag" : {
+          "order" : 15,
+          "tabButtonData" : "showTransportGrid",
+          "itemGrid" : "transportItemGrid",
+          "newItemMarker" : "newTransportItems"
+        },
+        "moneyBag" : {
+          "order" : 16,
+          "tabButtonData" : "showMoneyGrid",
+          "itemGrid" : "moneyItemGrid",
+          "newItemMarker" : "newMoneyItems"
+        },
+        "throwBag" : {
+          "order" : 17,
+          "tabButtonData" : "showThrowGrid",
+          "itemGrid" : "throwItemGrid",
+          "newItemMarker" : "newThrowItems"
+        },
+        "armorBag" : {
+          "order" : 18,
+         "tabButtonData" : "showArmorGrid",
+          "itemGrid" : "armorItemGrid",
+          "newItemMarker" : "newArmorItems"
+        },
+        "lightingBag" : {
+          "order" : 19,
+          "tabButtonData" : "showLightingGrid",
+          "itemGrid" : "lightingItemGrid",
+          "newItemMarker" : "newLightingItems"
+        },
+        "storageBag" : {
+          "order" : 20,
+          "tabButtonData" : "showStorageGrid",
+          "itemGrid" : "storageItemGrid",
+          "newItemMarker" : "newStorageItems"
+        },
+        "digitalBag" : {
+          "order" : 21,
+          "tabButtonData" : "showDigitalGrid",
+          "itemGrid" : "digitalItemGrid",
+          "newItemMarker" : "newDigitalItems"
+		},
+        "deviceBag" : {
+          "order" : 22,
+          "tabButtonData" : "showDeviceGrid",
+          "itemGrid" : "deviceItemGrid",
+          "newItemMarker" : "newDeviceItems"
+        },
+        "powerBag" : {
+          "order" : 23,
+          "tabButtonData" : "showPowerGrid",
+          "itemGrid" : "powerItemGrid",
+          "newItemMarker" : "newPowerItems"
+        }
+      } 
+    },
+    
+    {
+      "op" : "replace",
+      "path" : "/paneLayout",
+      "value" :  {
+        "panefeature" : {
+          "type" : "panefeature"
+          //"positionLocked" : true,
+          //"anchor" : "CenterLeft"
+            //disappears(offscreen?) if moved
+          
+        },
+        "background" : {
+          "type" : "background",
+          "fileHeader" : "/interface/carlucci_inventory/inventoryheader.png",
+          "fileBody" : "/interface/carlucci_inventory/inventorybody.png",
+          "fileFooter" : "/interface/carlucci_inventory/inventoryfooter.png"
+        },
+        "close" : {
+          "type" : "button",
+          "base" : "/interface/x.png",
+          "hover" : "/interface/xhover.png",
+          "pressed" : "/interface/xpress.png",
+          "pressedOffset" : [0, 0],
+          "position" : [290, 299]
+        },
+        "sort" : {
+          "type" : "button",
+          "base" : "/interface/carlucci_inventory/sort.png",
+          "hover" : "/interface/carlucci_inventory/sorthover.png",
+          "press" : "/interface/carlucci_inventory/sortpress.png",
+          "position" : [290, 9]
+        },
+        "imgMoneyIcon" : {
+          "type" : "image",
+          "position" : [8, 12],
+          "centered" : false,
+          "file" : "/interface/carlucci_inventory/money.png"
+        },
+        "lblMoney" : {
+          "type" : "label",
+          "position" : [20, 11],
+          "value" : "0"
+        },
+        "imgEssenceIcon" : {
+          "type" : "image",
+          "position" : [80, 11],
+          "centered" : false,
+          "file" : "/interface/carlucci_inventory/essenceicon.png"
+        },
+        "lblEssence" : {
+          "type" : "label",
+          "position" : [95, 11],
+          "value" : "0"
+        },
+        "newArmoryItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [6, 191] //16,191 (-10,-15)
+        },
+        "newFarmItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [6, 171]
+        },
+        "newArmorItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [33, 191]
+        },
+        "newHobbyItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [33, 171]
+	    },
+        "newThrowItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [60, 191]
+        },
+        "newVehicleItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [60, 171]
+        },
+        "newToolItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [87, 191]
+        },
+        "newReagentItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [87, 171]
+        },
+        "newAugmentsItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [114, 191]
+        },
+        "newTransportItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [114, 171]
+        },
+        "newMedsItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [141, 191]
+        },
+        "newObjectItems2" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [141, 171] //deco
+        },
+        "newFoodItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [168, 191]
+        },
+        "newLightingItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [168, 171]
+        },
+        "newObjectItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [195, 191]//Furn
+        },
+		"newMoneyItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [195, 171]
+        },
+        "newTileItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [222, 191]//blocks
+        },
+        "newStorageItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [222, 171]
+        },
+        "newLiquidItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [249, 191]
+        },
+        "newGeneralItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot3.png",
+          "position" : [258, 202] //25,195
+        },
+        "newPowerItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [276, 191]
+        },
+        "newDeviceItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [276, 171]
+        },
+		"newDigitalItems" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/dot.png",
+          "position" : [249, 171]
+        },
+        "gridModeSelector" : {
+          "type" : "radioGroup",
+          "position" : [5, 189],
+          "buttons" : [
+            {
+              "id" : 0,
+              "baseImage" : "/interface/carlucci_inventory/bigbag.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigbag.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigbag.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigbag.png:pressedChecked",
+              "position" : [271,35], //4 <subract by 4 to get icon centered
+              "data" : "showMainGrid",
+              "selected" : true,
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigArmory.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigArmory.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigArmory.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigArmory.png:pressedChecked",
+              "position" : [0, 2],
+              "data" : "showArmoryGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigcart.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigcart.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigcart.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigcart.png:pressedChecked",
+              "position" : [216, 2],
+              "data" : "showTileGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigobj.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigobj.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigobj.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigobj.png:pressedChecked",
+              "position" : [189, 2],
+              "data" : "showObjectGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigDecoration.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigDecoration.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigDecoration.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigDecoration.png:pressedChecked",
+              "position" : [135, -18],
+              "data" : "showObjectGrid2",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigrea.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigrea.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigrea.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigrea.png:pressedChecked",
+              "position" : [81, -18],
+              "data" : "showReagentGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigfood.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigfood.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigfood.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigfood.png:pressedChecked",
+              "position" : [162, 2],
+              "data" : "showFoodGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigFarm.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigFarm.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigFarm.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigFarm.png:pressedChecked",
+              "position" : [0, -18],
+              "data" : "showFarmGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bighobby.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bighobby.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bighobby.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bighobby.png:pressedChecked",
+              "position" : [27, -18],
+              "data" : "showHobbyGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigVehicle.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigVehicle.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigVehicle.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigVehicle.png:pressedChecked",
+              "position" : [54, -18],
+              "data" : "showVehicleGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigtool.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigtool.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigtool.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigtool.png:pressedChecked",
+              "position" : [81, 2],
+              "data" : "showToolGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigliquid.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigliquid.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigliquid.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigliquid.png:pressedChecked",
+              "position" : [243, 2],
+              "data" : "showLiquidGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigmeds.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigmeds.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigmeds.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigmeds.png:pressedChecked",
+              "position" : [135, 2],
+              "data" : "showMedsGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigaugments.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigaugments.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigaugments.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigaugments.png:pressedChecked",
+              "position" : [108, 2],
+              "data" : "showAugmentsGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigtransport.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigtransport.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigtransport.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigtransport.png:pressedChecked",
+              "position" : [108, -18],
+              "data" : "showTransportGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigmoney.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigmoney.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigmoney.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigmoney.png:pressedChecked",
+              "position" : [189, -18],
+              "data" : "showMoneyGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigthrow.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigthrow.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigthrow.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigthrow.png:pressedChecked",
+              "position" : [54, 2],
+              "data" : "showThrowGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigarmor.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigarmor.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigarmor.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigarmor.png:pressedChecked",
+              "position" : [27, 2],
+              "data" : "showArmorGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/biglighting.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/biglighting.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/biglighting.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/biglighting.png:pressedChecked",
+              "position" : [162, -18],
+              "data" : "showLightingGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigstorage.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigstorage.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigstorage.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigstorage.png:pressedChecked",
+              "position" : [216, -18],
+              "data" : "showStorageGrid",
+              "pressedOffset" : [0,0]
+            },
+			{
+              "baseImage" : "/interface/carlucci_inventory/bigdigital.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigdigital.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigdigital.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigdigital.png:pressedChecked",
+              "position" : [243, -18],
+              "data" : "showDigitalGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigdevice.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigdevice.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigdevice.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigdevice.png:pressedChecked",
+              "position" : [270, -18],
+              "data" : "showDeviceGrid",
+              "pressedOffset" : [0,0]
+            },
+            {
+              "baseImage" : "/interface/carlucci_inventory/bigpower.png:base",
+              "baseImageChecked" : "/interface/carlucci_inventory/bigpower.png:baseChecked",
+              "pressedImage" : "/interface/carlucci_inventory/bigpower.png:pressed",
+              "pressedImageChecked" : "/interface/carlucci_inventory/bigpower.png:pressedChecked",
+              "position" : [270, 2],
+              "data" : "showPowerGrid",
+              "pressedOffset" : [0,0]
+            }
+          ]
+        },
+        "portrait" : {
+          "type" : "portrait",
+          "position" : [85, 255],
+          "scale" : 1.6
+        },
+        "mainItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],//[12, 31],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],//[19, 19],
+          "backingImage" : "/interface/carlucci_inventory/empty2.png"
+        },
+        "armoryItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "tileItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "objectItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "objectItemGrid2" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "reagentItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "foodItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "farmItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "hobbyItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "vehicleItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "toolItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "liquidItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "powerItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "medsItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "augmentsItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "transportItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "moneyItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "throwItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "armorItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "lightingItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "storageItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+        "deviceItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+		"digitalItemGrid" : {
+          "type" : "itemgrid",
+          "position" : [5, 27],
+          "dimensions" : [15, 7],
+          "spacing" : [20, 20],
+          "backingImage" : "/interface/carlucci_inventory/empty.png"
+        },
+		
+		
+        "head" : {
+          "type" : "itemslot",
+          "position" : [5, 271],
+          "backingImage" : "/interface/carlucci_inventory/backingimagehead.png",
+          "data" : {
+            "TooltipText" : "Head Armour"
+          }
+        },
+        "chest" : {
+          "type" : "itemslot",
+          "position" : [5, 252],
+          "backingImage" : "/interface/carlucci_inventory/backingimagechest.png",
+          "data" : {
+            "TooltipText" : "Chest Armour"
+          }
+        },
+        "legs" : {
+          "type" : "itemslot",
+          "position" : [5, 214],
+          "backingImage" : "/interface/carlucci_inventory/backingimagelegs.png",
+          "data" : {
+            "TooltipText" : "Leg Armour"
+          }
+        },
+        "back" : {
+          "type" : "itemslot",
+          "position" : [5, 233], //5,250
+          "backingImage" : "/interface/carlucci_inventory/backingimageback.png",
+          "data" : {
+            "TooltipText" : "Back Armour"
+          }
+        },
+        "headCosmetic" : {
+          "type" : "itemslot",
+          "position" : [25, 271],
+          "backingImage" : "/interface/carlucci_inventory/backingimagesocial.png",
+          "data" : {
+            "TooltipText" : "Head Cosmetic"
+          }
+        },
+        "chestCosmetic" : {
+          "type" : "itemslot",
+          "position" : [25, 252],
+          "backingImage" : "/interface/carlucci_inventory/backingimagesocial.png",
+          "data" : {
+            "TooltipText" : "Chest Cosmetic"
+          }
+        },
+        "legsCosmetic" : {
+          "type" : "itemslot",
+          "position" : [25, 214],
+          "backingImage" : "/interface/carlucci_inventory/backingimagesocial.png",
+          "data" : {
+            "TooltipText" : "Leg Cosmetic"
+          }
+        },
+        "backCosmetic" : {
+          "type" : "itemslot",
+          "position" : [25, 233], //5,230
+          "backingImage" : "/interface/carlucci_inventory/backingimagesocial.png",
+          "data" : {
+            "TooltipText" : "Back Cosmetic"
+          }
+        },
+        "techHead" : {
+          "type" : "image",
+          "position" : [191, 232],//223, 230
+          "centered" : true
+        },
+        "techHeadDisabled" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/techdisabled.png",
+          "position" : [191, 232],
+          "zlevel" : 2
+        },
+        "techBody" : {
+          "type" : "image",
+          "position" : [222, 232],
+          "centered" : true
+        },
+        "techBodyDisabled" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/techdisabled.png",
+          "position" : [222, 232],
+          "zlevel" : 2
+        },
+        "techLegs" : {
+          "type" : "image",
+          "position" : [251, 232],
+          "centered" : true
+        },
+        "techLegsDisabled" : {
+          "type" : "image",
+          "file" : "/interface/carlucci_inventory/techdisabled.png",
+          "position" : [251, 232],
+          "zlevel" : 2
+        },
+        "companionSlot" : {
+          "type" : "image",
+          "centered" : true,
+          "file" : "",
+          "position" : [192, 272],
+          "maxSize" : [30, 30],
+          "minSize" : [20, 20]
+        },
+        "companionHealthBar" : {
+          "type" : "progress",
+          "position" : [225, 260],
+          "background" : "/interface/carlucci_inventory/monsterhealthempty.png",
+          "progressSet" : {
+            "inner" : "/interface/carlucci_inventory/monsterhealth.png",
+            "type" : "repeat"
+          },
+          "direction" : "horizontal"
+        },
+        
+        "companionAttackStat" : {
+          "type" : "label",
+          "position" : [228, 277],//280, 313
+          "hAnchor" : "mid",
+          "fontSize" : 8,
+          "value" : "42",
+          "color" : [255, 255, 255]
+        },
+        "companionDefenseStat" : {
+          "type" : "label",
+          "position" : [235, 268],//280, 304
+          "hAnchor" : "mid",
+          "fontSize" : 8,
+          "value" : "42",
+          "color" : [255, 255, 255]
+        },
+        "healthtext" : {
+          "type" : "label",
+          "position" : [150, 276],
+          "hAnchor" : "left",
+          "fontSize" : 8,
+          "value" : "set at runtime",
+          "color" : [255, 255, 255]
+        },
+        
+        "energytext" : {
+          "type" : "label",
+          "position" : [150, 257],
+          "hAnchor" : "left",
+		  "fontSize" : 8,
+          "value" : "set at runtime",
+          "color" : [255, 255, 255]
+        },
+        "defensetext" : {
+          "type" : "label",
+          "position" : [150, 219],
+          "hAnchor" : "left",
+		  "fontSize" : 8,
+          "value" : "--",
+          "color" : [255, 255, 255]
+        },
+        "weapontext" : {
+          "type" : "label",
+          "position" : [150, 238],
+          "hAnchor" : "left",
+		  "fontSize" : 8,
+          "value" : "set at runtime",
+          "color" : [255, 255, 255]
+        },
+        "trash" : {
+          "type" : "itemslot",
+          "position" : [281, 262],//274, 243
+          "backingImage" : "/interface/carlucci_inventory/backingimagetrash3.png",
+          "data" : {
+            "TooltipText" : "Trash"
+          }
+        },
+        "labelappearance" : {
+          "type" : "label",
+          "position" : [59, 283],
+          "hAnchor" : "mid",
+          "value" : "",
+          "color" : [ 185, 181, 178]
+        },
+        "labelstats" : {
+          "type" : "label",
+          "position" : [166, 283],
+          "hAnchor" : "mid",
+          "value" : "",
+          "color" : [185, 181, 178]
+        },
+        
+        //moved pets [107, 76]
+        "companionName" : {
+          "type" : "label",
+          "position" : [200, 200],
+          "hAnchor" : "mid",
+          "value" : " ",
+          "color" : [0, 0, 0, 0]
+        },
+        "labeltech" : {
+          "type" : "label",
+          "position" : [254, 243],
+          "hAnchor" : "mid",
+          "value" : "",
+          "color" : [0, 0, 0]
+        },
+        "companionAtkR" : {
+          "type" : "label",
+          "position" : [212, 278],
+          "hAnchor" : "mid",
+          "value" : "ATK",
+          "fontSize" : 6,
+          "color" : [255, 255, 255]
+        },
+        "companionDefR" : {
+          "type" : "label",
+          "position" : [217, 268],
+          "hAnchor" : "mid",
+          "value" : "DEF",
+          "fontSize" : 6,
+          "color" : [255, 255, 255]
+        },
+        "companionHPR" : {
+          "type" : "label",
+          "position" : [212, 259],
+          "hAnchor" : "mid",
+          "value" : "HP",
+          "fontSize" : 6,
+          "color" : [255, 255, 255]
+        }
+      }
+    },
+    {
+      "op" : "add",
+      "path" : "/carlucci_inventory",  //in case someone needs to know.
+      "value" : true
+    }
+  ]
+]

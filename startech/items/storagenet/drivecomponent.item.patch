@@ -1,0 +1,13 @@
+[
+  {
+    "op" : "replace",
+    "path" : "/category",
+    "value" : "startech:digitalstorage"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags",
+    "value": [ "digital" ]
+  }
+
+]

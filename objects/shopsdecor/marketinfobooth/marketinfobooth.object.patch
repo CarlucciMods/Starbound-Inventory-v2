@@ -1,0 +1,12 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/category",
+    "value": "decoration"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags",
+    "value": [ "decor" ]
+  }
+]

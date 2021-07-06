@@ -1,0 +1,14 @@
+{
+  "itemName" : "clonecommandoback:3",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:back",
+  "rarity" : "Rare",
+  "category" : "backwear",
+  "description" : "Armour worn by Recon Commando Boss of the Grand Army of the Republic",
+  "shortdescription" : "Clone Commando Backpack",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+  "maxStack" : 1
+}

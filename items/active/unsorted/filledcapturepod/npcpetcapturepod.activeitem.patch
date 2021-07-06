@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/category",
+    "value": "Creature Pod"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags/-",
+    "value": "augment"
+  }
+]

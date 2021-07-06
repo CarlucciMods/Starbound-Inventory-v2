@@ -1,0 +1,12 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/category",
+    "value": "station"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags",
+    "value": [ "fhatch" ]
+  }
+]

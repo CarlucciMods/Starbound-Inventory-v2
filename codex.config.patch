@@ -1,0 +1,17 @@
+/*
+Why does this file exist?
+Because certain unnamed mods have borked their patches
+resulting in codexes being without a category.
+
+No category means it won't filter into the correct tab
+and it was requested that I fix it.  And so I have.
+But I only fixed the categories as the rest isn't important
+nor relevant to this mod.
+*/
+[
+  [
+    { "op": "test", "path": "/defaultItemConfig/category", "inverse": true },
+	{ "op": "add", "path": "/defaultItemConfig/category", "value": "codex" }
+  ]
+]
+

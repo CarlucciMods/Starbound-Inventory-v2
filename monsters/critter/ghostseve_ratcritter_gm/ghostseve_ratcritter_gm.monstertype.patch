@@ -1,0 +1,12 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/category",
+    "value": "pets"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags",
+    "value": [ "pets" ]
+  }
+]

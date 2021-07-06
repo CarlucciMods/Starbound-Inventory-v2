@@ -1,0 +1,12 @@
+﻿[
+  {
+    "op": "add",
+    "path": "/category",
+    "value": "musicalInstrument"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags",
+    "value": [ "instrument" ]
+  }
+]

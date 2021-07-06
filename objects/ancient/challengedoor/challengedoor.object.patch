@@ -1,0 +1,9 @@
+[
+  { "op" : "replace", "path" : "/price", "value" : 5000 },
+  { "op" : "replace", "path" : "/smashOnBreak", "value" : false },
+  {
+    "op" : "add",
+    "path" : "/category",
+    "value" : "teleporter"
+  }
+]

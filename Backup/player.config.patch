@@ -1,0 +1,498 @@
+[
+
+[
+
+{
+"op": "replace",
+"path": "/inventory/itemBags",
+"value": {
+"armoryBag" : { "priority" : 1, "size" : 105 },//weapons 
+"armorBag" : { "priority" : 2, "size" : 105 },//armor 
+"throwBag" : { "priority" : 3, "size" : 105 },//throwable items, breakable items 
+"toolBag" : { "priority" : 4, "size" : 105 },//tool
+"augmentsBag" : { "priority" : 5, "size" : 105 },//epp, collar and lure augments
+"medsBag" : { "priority" : 6, "size" : 105 },//medicine
+"foodBag" : { "priority" : 7, "size" : 105 },//food
+"objectBag" : { "priority" : 8, "size" : 105 },//furniture and platforms
+"materialBag" : { "priority" : 9, "size" : 105 },//building blocks 
+"liquidBag" : { "priority" : 10, "size" : 105 },//liquids 
+"farmBag" : { "priority" : 11, "size" : 105 },//seeds, saplings, gardenbots and pets
+"hobbyBag" : { "priority" : 12, "size" : 105 },//music and documents
+"vehicleBag" : { "priority" : 13, "size" : 105 },//mech, spaceship, boat and vehicle parts, anything that has to do with these items
+"reagentBag" : { "priority" : 14, "size" : 105 },//crafting materials 
+"transportBag" : { "priority" : 15, "size" : 105 },//rails and elevators, flags and teleporters 
+"objectBag2" : { "priority" : 16, "size" : 105 },//decorations 
+"lightingBag" : { "priority" : 17, "size" : 105 },//lighting 
+"moneyBag" : { "priority" : 18, "size" : 105 },//voxels and pixels
+"storageBag" : { "priority" : 19, "size" : 105 },// chests, lockers (old skool storage)
+"mainBag" : { "priority" : 20, "size" : 105 },//junk bag, other and leftovers 
+"deviceBag" : { "priority" : 21, "size" : 105 },//device stations 
+"digitalBag" : { "priority" : 22, "size" : 105 },//digital transportation and storage
+"powerBag" : { "priority" : 23, "size" : 105 }//anything that creates, gives and supplies power
+}
+},
+
+{
+"op": "replace",
+"path": "/inventoryFilters",
+"value": {
+"mainBag" : {
+/*++++++++++++++++++++++++++++++++++++++++JUNK BAG+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"typeWhitelist" : [ "material","object","miningtool","flashlight","harvestingtool","tillingtool","consumable",
+"blueprint","codex","instrument","thrownitem","unlockitem","activeitem","generic","augmentitem",""],
+ //"typeBlacklist" : [ "material", "liquid", "object" ]
+"tagBlacklist" : [ "reagent","salvage"],
+"categoryBlacklist" : [ "flashlight","harvestingtool", "tool","tools", "Tool", "Tool ^green;[R]", "throwableItem", "medicine",
+"Wire", "wire","light","Crafting Station","terraformer","crafting","enviroProtectionPack",
+"^#e43774;Upgradeable EPP^reset;","eppAugment","Creature Pod","petCollar","station","Component","Upgrade Chip",
+"mechPart","salvageComponent","upgradeComponent","vehicleController","teleportMarker","teleporter","storage",
+"wired","rail","railPlatform","railPoint","power","fridgeStorage","Unique Drill","bugnet","Matter Manipulator",
+"Matter Reshaper","Mining Laser","MiningLaser","Tool ^green;[R]","Tool","^#e43774;Upgradeable Tool^reset;",
+"tools","tool","Tools","storagenet.storage","storagenet","digitalstorage","storagetransport","upgradeableTool",
+"power","power.gen","power.machine","power.storage","power.transport","wire","Macrochip Data","wired","block","Block", "Crafted Block",
+"Building Block", "Natural Block","materials","furniture","platform","door","breakable","dragonpet","farmable",
+"petchocobo","pigMFM","farmBeastEgg","farmBeastFeed","farmBeastFood","farmingEquipment","petfood","pigMFMbaby",
+"sapling","pets","seed","spawner","decorative","Machinery","fuel","generic","supports",
+"Extracts Storage Matter","Modifies Storage Matter","Reshapes Storage Matter","shippingContainer",
+"Apex Cookware","Avian Cookware","Basic Cookware","Cookware","Floran Cookware","Glitch Cookware","Hylotl Cookware",
+"Makeshift Cookware","Merchant","Nano Cookware","Novakid Cookware","Old Cookware","Portable Shop","Refridgerated Apex Cookware",
+"Refridgerated Avian Cookware","Refridgerated Basic Cookware","Refridgerated Glitch Cookware","Refridgerated Nanokid Cookware",
+"Test Cookware","merchant","Refridgerated Cookware","Refridgerated Floran Cookware",
+"^orange;Extraction Device^reset;","^orange;Centrifuge^reset;","Idle Factories","Virtual Circuit Manager",
+"Galactic Shop","Galactic Market Event","Spawner - interact","Spawner - wire","techManagement",
+"Smart Box","container","Macrochip Data","A.I. Chip","Drone Booting Platform","sharkdrone","Core Crystal", 
+"upgradeableTool","parasol","detector","relocator","translocator","trap","yoyoupgrade","yoyo","mechrepairtool",
+"handlegun","^orange;Matter Synthesiser^white;","Material Can","Nebulizer Module",
+ 
+//armoryBag.weapons
+"assaultRifle", "axe", "boomerang", "bow", "broadsword", "chakram", "crossbow", "dagger", "fistWeapon", "grenadeLauncher",
+"hammer", "machinePistol", "pistol", "rocketLauncher", "shield", "shortsword", "shotgun", "sniperRifle", "spear", "staff",
+"wand", "toy", "uniqueWeapon", "whip", "^#e43774;Upgradeable Weapon^reset;",
+//armoryBag.weapons.FU
+"precursor", "liquidGun", "energy", "Rapier", "flamethrower", "Radiation Rifle",
+"Rail Gun", "shortspear", "Shotgun Pistol", "Shotgun", "Sniper Rifle",
+"Spawn Gun", "war sword", "warblade", "Micro-Rocket Launcher", "Omega Cannon",
+"Magnorb", "assaultrifle", "Bio Weapon", "Broadsword", "Claw Launcher",
+"Crystal Carbine", "Crystal Sidearm", "Dart Carbine", "Dart Rifle", "Electric Rifle",
+"Energy Gun", "Energy Shotgun", "Energy Vulcan", "Fire Cannon", "Flame Cannon",
+"Energy Pistol","Energy Rifle",
+//"fu_lance",
+"Gravity Weapon", "Ice Cannon", "Ice Carbine", "Ice Pistol", "Kinetic Carbine",
+"Kinetic Machinegun", "Kinetic Pistol", "Kinetic Rifle", "longsword", "mace",
+"scythe", "quarterstaff", "katana", "rapier", "lance", "energy",
+"battleblade", "bioweapon",
+//"Kinetic Sidearm",
+"Abomination", "Liquid Gun", "Light Source", "Minigun", "Chaingun", "Energy Weapon",
+"Quarterstaff", "Radiation Ejector", "upgradeable",
+//armoryBag.weapons.HoneyBager(Ihart)
+"baton", "cane", "club", "armcannon", "greataxe", "longbow", "greatbow",
+"greatmace", "greatsword", "spellbook",
+//armoryBag.weapons.others(several at once)
+"AssaultRifle", "swtjc_ewg_antiMaterialRifle", "swtjc_ewg_autoShotgun", "swtjc_ewg_battleRifle",
+"swtjc_ewg_beamPistol", "swtjc_ewg_beamRifle", "swtjc_ewg_flakCannon", "swtjc_ewg_miniRocketLauncher",
+"swtjc_ewg_multiGrenadeLauncher", "swtjc_ewg_revolver", "swtjc_ewg_sawedOffShotgun", "swtjc_ewg_squadAutomaticWeapon",
+"swtjc_ewg_submachineGun", "Uzi", "Alien Laser", "Assault Rifle", "Avian Blaster",
+"Avian Heavy Blaster", "Bone Assault Rifle", "Bone Pistol", "Bone Shotgun", "Cell Zapper",
+"Corrosive Gun", "Crossbow", "Flamethrower", "Floran Grenade Launcher", "Globe Launcher",
+"Grenade Launcher", "Lightning Coil", "Machine Pistol", "Needler", "Pistol",
+"Plasma Machine Pistol", "Plasma Pistol", "Plasma Rifle", "Plasma Shotgun", "Plasma Sniper Rifle",
+"Pulse Rifle", "Revolver", "Rocket Launcher", "Shattergun", "Shotgun", "Sniper Rifle",
+"Stinger Gun", "^pink;Black Market Weapon", "Katana", "Wakizashi", "broom", "Yin-Yang Orb",
+"Halberd", "Marksman's Rifle",
+//armoryBag.Lyetzi_Gunners_Mod
+"^#7c7c7c;Česká zbrojovka UB", "^#7c7c7c;BAE Systems", "^#7c7c7c;Birmingham Small Arms Co.",
+"^#7c7c7c;Carl Walther GMBH", "^#7c7c7c;Colt Manuf. Company", "^#7c7c7c;Colt's Manuf. Company",
+"^#7c7c7c;Colt's Manufacturing", "^#7c7c7c;Colt's P. Firearms Manuf. Co.", "^#7c7c7c;Daewoo Precision",
+"^#7c7c7c;Fabbrica d'Armi P. Beretta", "^#7c7c7c;Fabrique Nationale", "^#7c7c7c;FN Herstal",
+"^#7c7c7c;German Empire", "^#7c7c7c;GIAT Industries", "^#7c7c7c;Glock Ges.m.b.H.",
+"^#7c7c7c;Haenel", "^#7c7c7c;Heckler & Koch", "^#7c7c7c;Indian Ordnance F.B.",
+"^#7c7c7c;Izhevsk Mechanical Plant", "^#7c7c7c;Izhmash", "^#7c7c7c;Kalashnikov Concern",
+"^#7c7c7c;KBP", "^#7c7c7c;Kingdom of Italy", "^#7c7c7c;KRISS USA Inc.",
+"^#7c7c7c;Magnum Research", "^#7c7c7c;Mauser", "^#7c7c7c;Royal Small Arms Factory",
+"^#7c7c7c;SIG Sauer", "^#7c7c7c;SITES", "^#7c7c7c;Smith & Wesson",
+"^#7c7c7c;Soviet Arsenals", "^#7c7c7c;Soviet", "^#7c7c7c;Steyr Mannlicher",
+"^#7c7c7c;Steyr-Daimler-Puch", "^#7c7c7c;Sturm Ruger & Co.", "^#7c7c7c;Swiss Arms AG",
+"^#7c7c7c;Taurus International", "^#7c7c7c;Tikkakoski", "^#7c7c7c;TsKIB SOO",
+"^#7c7c7c;Tula Arms Plant", "^#7c7c7c;Tula Arsenal", "^#7c7c7c;U.S. Military",
+"^#7c7c7c;Voere", "^#7c7c7c;Vytatsky Polyany Plant", "^#7c7c7c;Webley & Scott",
+//armoryBag.weapons.weaponMegaPack
+"^#908680;Fauchard", "^#908680;Glitch Mace", "^#908680;Voulge", "^#d2ccbf;Ancient Axe",
+"^#d2ccbf;Ancient Broadsword", "^#d2ccbf;Ancient Dagger", "^#d2ccbf;Ancient Hammer", "^#d2ccbf;Ancient Shortsword",
+"^#d2ccbf;Forgotten Spear", "^#e1a05e;AK-47", "^#ffd700;Apex Broadsword", "^#ffd700;Apex Spear",
+"^#FFFF99;Avian Shortsword", "^#FFFF99;Avian Spear", "#ffd700;Apex Broadsword", "#ffd700;Apex Spear",
+"^#2dd2d2;Hylotl Katana", "^#2dd2d2;Hylotl Sickle", "^#2dd2d2;Hylotl Spear", "^#2dd2d2;Hylotl Tanto",
+"^#5ea37c;Floran Broadsword", "^#5ea37c;Floran Hammer", "^#5fffd3;Hackman", "^#cbfff0;Hybrid Broadsword",
+"^#cbfff0;Hybrid Hammer", "^#cbfff0;Hybrid Spear", "^#ff6f69;Mushroom Sword",
+"^#ff948e;Ra^#ffcc8d;in^#f9ff91;bow ^#97ff9e;Spe^#abbeff;ar", "^#ffd700;Apex Axe", "Ancient Axe",
+"Ancient Broadsword", "Ancient Dagger", "Ancient Hammer", "Ancient Shortsword",
+"avianshortsword", "avianspear", "Bone Hammer", "Bone Sword", "Cell Shade",
+"Coral Cleaver", "Crystal Spear", "crystalspear", "Eye Axe", "Forgotten Spear",
+"Glitch Mace", "Novakid Revolver", "Novakid Rifle", "Toxic Broadsword", "WMPstaff", "P90",
+//armoryBag.weapons.warframeParkour
+"Exalted Blade", "Exalted Bow", "Gunblade",
+//armoryBag.weapons.theSecretWorld
+"Anima Charged Blood","Anima Charged Chaos","Anima Charged Elementalism","Anima Charged Fist","Anima Charged Hammer",
+"Anima Charged Pistol","Anima Charged Rifle","Anima Charged Shotgun","Anima Charged Sword","Blood magic II","Blood magic III",
+"Blood magic IV","Blood magic","Chaos magic II","Chaos magic III","Chaos magic IV","Chaos magic","Corrupted Fist","Corrupted Hammer",
+"Corrupted Pistol","Corrupted Rifle","Corrupted Shotgun","Corrupted Sword","Demonic Fist","Demonic Hammer","Demonic Pistol",
+"Demonic Rifle","Demonic Shotgun","Demonic Sword","Elementalism magic II","Elementalism magic III","Elementalism magic IV",
+"Elementalism magic","MANTICORE Hammer","MANTICORE Pistol","MANTICORE Rifle","MANTICORE Shotgun","MANTICORE Sword",
+"Orochi Fist","Orochi Hammer","Partialy technological","Supernatural","Technological",
+//armoryBag.weapons.requests(tremion)
+"Auto-Rifle","Overpowered Machine Pistol","Overpowered Pistol","Overpowered Rifle","Rifle",
+//armoryBag.weapons.immersiveWeapons
+"Axe","Bastard","Bat","Baton","Claymore","Club","Dagger","Double Blade War Axe","Hammer","Hatchet","Hook sword","Knife",
+"Long Sword","Mace","Machete","Medival polearm","Pipe","Saber","Sai","short Katana",
+ //kodachi
+"Swallow","Sword","sword","Tomahawk",
+"Tonfa", 
+//Suikoden 2 nostolgia
+"Trident","War Axe","War Hammer",
+//armoryBag.weapons.weapon_melee_types
+"Longsword",
+//armoryBag.weapons.USE
+"Ship Cannon","Self-Loading Rifle","Mortar","Marksman Rifle","LMG","Light Machinegun","It's a fucking minigun","Heavy Rifle",
+"D.M.R","Battle Rifle","Anti-Typhon","Anti-Tank","Anti-Tank Rifle","Anti-Typhon","Carbine","Heavy Assault Gun",
+"Riot Baton","Stockless Assault Rifle","Submachine Gun",
+//armoryBag.weapons.tactical_weapons
+"mineLauncher",
+//armoryBag.weapons.Azure's_Star_Wars
+"Blaster Carbine","Blaster Pistol","Blaster Rifle",
+//armoryBag.weapons.Elithan_races
+"Bomb","Burst Rifle","Combat Rifle","Courser Rifle","Crook","Directed Energy Rifle","Electric Prod","Electric Spear",
+"Elemental Rifle","Flux Launcher","Flux Rifle","Frost Cannon","Gravity Distortion Rifle","Hand Cannon","Harpoon Gun",
+"Heavy Bow","Heavy Jumprifle","Heavy Line Rifle","Hunting Knife","Hunting Spear","Hologram","Ion Cannon","Jumpcannon",
+"Jumpgun","Jumprifle","Jumpsniper","Laser Cannon","Laser Pistol","Laser Rifle","Laser Shotgun","Laser Sniper",
+"Laser Targeting System","Line Cannon","Line Rifle","Line Staff","Linebow","Machinegun","Missile Pod","Modified Jumprifle",
+"Particle Accelerator","Prod","Prototype Weapon","Pulsar Pistol","Sand Launcher","Shieldblade","Shock Baton","Shortbow",
+"Sidearm","Skip Rifle","Sonic Cannon","Submachinegun","Switchblade","Tendril","Volley Launcher","Welding Torch","Wrench",
+//armoryBag.armor
+"chestarmour","headarmour","legarmour","backwear","chestwear","headwear","legwear","enviroProtectionPack",
+//armoryBag.armor.FU
+"armor","^#e43774;Upgradeable Armor^reset;","legsarmour","headarmor","chestarmor","legarmor","t1armor","t1armoru","t2armor",
+"t2armoru","t3armor","t3armoru","t4armor","t4armoru","t5armor","t5armoru","t6armor","t6armoru","t7armor","t7armoru",
+"t8armor","t8armoru","t9armor","t9armoru","t10armor","t10armoru",
+//"Order Robes",
+//armoryBag.USCM
+"Functional Headwear",
+//armoryBag.modifiers
+"clothingDye","eppAugment","^#e43774;Upgradeable EPP^reset;",
+"musicalInstrument","codex","largeFossil","mediumFossil","smallFossil","tradingCard","trophy","Trophy","fishingRod","fishingLure",
+"fishingReel","currency","blueprint","Blueprint","Memory","Contract","Security Pass","Crafting Guide","Quest Item","quest",
+"Sellable","Special Sellable","cookingIngredient","preparedFood","food","drink","foodJunk", "seed","sapling","farmBeastEgg",
+"farmBeastFood","farmBeastFeed","petfood"]
+
+},
+"armoryBag" : {
+/*++++++++++++++++++++++++++++++++++++++++WEAPONS+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"typeBlacklist" : [ "material", "liquid", "object" ],
+"tagBlacklist" : [ "reagent", "salvage" ],
+"categoryBlacklist" : ["Functional Headwear","^#e43774;Upgradeable Armor^reset;","armor","backwear", "chestarmor",
+"chestarmour","chestwear","headarmor","headarmour","headwear","legarmor", "legarmour","legsarmour","legwear","t10armor",
+"t10armoru","t1armor","t1armoru","t2armor","t2armoru","t3armor","t3armoru","t4armor","t4armoru","t5armor","t5armoru",
+"t6armor","t6armoru","t7armor","t7armoru","t8armor","t8armoru","t9armor","t9armoru","shield","Core Crystal",
+"enviroProtectionPack","^#e43774;Upgradeable EPP^reset;","eppAugment","Creature Pod","petCollar" ],
+"categoryWhitelist" : [
+"yoyoupgrade","yoyo","handlegun",
+//armoryBag.weapons
+"assaultRifle","axe","boomerang","bow","broadsword","chakram","crossbow",
+"dagger","fistWeapon","grenadeLauncher","hammer","machinePistol","pistol",
+"rocketLauncher","shield","shortsword","shotgun","sniperRifle","spear",
+"staff","wand","toy","uniqueWeapon","whip","^#e43774;Upgradeable Weapon^reset;",
+//armoryBag.weapons.FU
+"precursor","liquidGun","energy","Rapier","flamethrower","Radiation Rifle",
+"Rail Gun","shortspear","Shotgun Pistol","Shotgun","Sniper Rifle","Spawn Gun",
+"war sword","warblade","Micro-Rocket Launcher","Omega Cannon","Magnorb","assaultrifle",
+"Bio Weapon","Broadsword","Claw Launcher","Crystal Carbine","Crystal Sidearm","Dart Carbine",
+"Dart Rifle","Electric Rifle","Energy Gun","Energy Shotgun","Energy Vulcan","Fire Cannon",
+"Flame Cannon","Energy Pistol","Energy Rifle",
+//"fu_lance",
+"Gravity Weapon","Ice Cannon","Ice Carbine","Ice Pistol","Kinetic Carbine","Kinetic Machinegun",
+"Kinetic Pistol","Kinetic Rifle","longsword","mace","scythe","quarterstaff",
+"katana","rapier","lance","energy","battleblade","bioweapon",
+//"Kinetic Sidearm",
+"Abomination","Liquid Gun","Light Source","Minigun","Chaingun","Energy Weapon",
+"Quarterstaff","Radiation Ejector","upgradeable",
+//armoryBag.weapons.HoneyBager(Ihart)
+"baton","cane","club","armcannon","greataxe","longbow","greatbow",
+"greatmace","greatsword","spellbook",
+//armoryBag.weapons.others(several at once)
+"AssaultRifle","swtjc_ewg_antiMaterialRifle","swtjc_ewg_autoShotgun","swtjc_ewg_battleRifle",
+"swtjc_ewg_beamPistol","swtjc_ewg_beamRifle","swtjc_ewg_flakCannon","swtjc_ewg_miniRocketLauncher",
+"swtjc_ewg_multiGrenadeLauncher","swtjc_ewg_revolver","swtjc_ewg_sawedOffShotgun","swtjc_ewg_squadAutomaticWeapon",
+"swtjc_ewg_submachineGun","Uzi","Alien Laser","Assault Rifle","Avian Blaster",
+"Avian Heavy Blaster","Bone Assault Rifle","Bone Pistol","Bone Shotgun","Cell Zapper",
+"Corrosive Gun","Crossbow","Flamethrower","Floran Grenade Launcher","Globe Launcher",
+"Grenade Launcher","Lightning Coil","Machine Pistol","Needler","Pistol","Plasma Machine Pistol",
+"Plasma Pistol","Plasma Rifle","Plasma Shotgun","Plasma Sniper Rifle","Pulse Rifle",
+"Revolver","Rocket Launcher","Shattergun","Shotgun","Sniper Rifle","Stinger Gun",
+"^pink;Black Market Weapon","Katana","Wakizashi","broom","Yin-Yang Orb","Halberd",
+"Marksman's Rifle",
+//armoryBag.Lyetzi_Gunners_Mod
+"^#7c7c7c;Česká zbrojovka UB","^#7c7c7c;BAE Systems","^#7c7c7c;Birmingham Small Arms Co.",
+"^#7c7c7c;Carl Walther GMBH","^#7c7c7c;Colt Manuf. Company","^#7c7c7c;Colt's Manuf. Company",
+"^#7c7c7c;Colt's Manufacturing","^#7c7c7c;Colt's P. Firearms Manuf. Co.", "^#7c7c7c;Daewoo Precision",
+"^#7c7c7c;Fabbrica d'Armi P. Beretta","^#7c7c7c;Fabrique Nationale","^#7c7c7c;FN Herstal",
+"^#7c7c7c;German Empire","^#7c7c7c;GIAT Industries","^#7c7c7c;Glock Ges.m.b.H.",
+"^#7c7c7c;Haenel","^#7c7c7c;Heckler & Koch","^#7c7c7c;Indian Ordnance F.B.","^#7c7c7c;Izhevsk Mechanical Plant",
+"^#7c7c7c;Izhmash","^#7c7c7c;Kalashnikov Concern","^#7c7c7c;KBP","^#7c7c7c;Kingdom of Italy",
+"^#7c7c7c;KRISS USA Inc.","^#7c7c7c;Magnum Research","^#7c7c7c;Mauser","^#7c7c7c;Royal Small Arms Factory",
+"^#7c7c7c;SIG Sauer","^#7c7c7c;SITES","^#7c7c7c;Smith & Wesson","^#7c7c7c;Soviet Arsenals",
+"^#7c7c7c;Soviet","^#7c7c7c;Steyr Mannlicher","^#7c7c7c;Steyr-Daimler-Puch","^#7c7c7c;Sturm Ruger & Co.",
+"^#7c7c7c;Swiss Arms AG","^#7c7c7c;Taurus International","^#7c7c7c;Tikkakoski","^#7c7c7c;TsKIB SOO",
+"^#7c7c7c;Tula Arms Plant","^#7c7c7c;Tula Arsenal","^#7c7c7c;U.S. Military","^#7c7c7c;Voere",
+"^#7c7c7c;Vytatsky Polyany Plant","^#7c7c7c;Webley & Scott",
+//armoryBag.weapons.weaponMegaPack
+"^#908680;Fauchard","^#908680;Glitch Mace","^#908680;Voulge","^#d2ccbf;Ancient Axe",
+"^#d2ccbf;Ancient Broadsword","^#d2ccbf;Ancient Dagger","^#d2ccbf;Ancient Hammer","^#d2ccbf;Ancient Shortsword",
+"^#d2ccbf;Forgotten Spear","^#e1a05e;AK-47","^#ffd700;Apex Broadsword","^#ffd700;Apex Spear",
+"^#FFFF99;Avian Shortsword","^#FFFF99;Avian Spear","#ffd700;Apex Broadsword","#ffd700;Apex Spear",
+"^#2dd2d2;Hylotl Katana","^#2dd2d2;Hylotl Sickle","^#2dd2d2;Hylotl Spear","^#2dd2d2;Hylotl Tanto",
+"^#5ea37c;Floran Broadsword","^#5ea37c;Floran Hammer","^#5fffd3;Hackman","^#cbfff0;Hybrid Broadsword",
+"^#cbfff0;Hybrid Hammer","^#cbfff0;Hybrid Spear","^#ff6f69;Mushroom Sword",
+"^#ff948e;Ra^#ffcc8d;in^#f9ff91;bow ^#97ff9e;Spe^#abbeff;ar","^#ffd700;Apex Axe",
+"Ancient Axe","Ancient Broadsword","Ancient Dagger","Ancient Hammer","Ancient Shortsword",
+"avianshortsword","avianspear","Bone Hammer","Bone Sword","Cell Shade","Coral Cleaver",
+"Crystal Spear","crystalspear","Eye Axe","Forgotten Spear","Glitch Mace","Novakid Revolver",
+"Novakid Rifle","Toxic Broadsword","WMPstaff","P90",
+//armoryBag.weapons.warframeParkour
+"Exalted Blade","Exalted Bow","Gunblade",
+//armoryBag.weapons.theSecretWorld
+"Anima Charged Blood","Anima Charged Chaos","Anima Charged Elementalism","Anima Charged Fist",
+"Anima Charged Hammer","Anima Charged Pistol","Anima Charged Rifle","Anima Charged Shotgun",
+"Anima Charged Sword","Blood magic II","Blood magic III","Blood magic IV","Blood magic",
+"Chaos magic II","Chaos magic III","Chaos magic IV","Chaos magic","Corrupted Fist",
+"Corrupted Hammer","Corrupted Pistol","Corrupted Rifle","Corrupted Shotgun","Corrupted Sword",
+"Demonic Fist","Demonic Hammer","Demonic Pistol","Demonic Rifle","Demonic Shotgun",
+"Demonic Sword","Elementalism magic II","Elementalism magic III","Elementalism magic IV",
+"Elementalism magic","MANTICORE Hammer","MANTICORE Pistol","MANTICORE Rifle","MANTICORE Shotgun",
+"MANTICORE Sword","Orochi Fist","Orochi Hammer","Partialy technological","Supernatural",
+"Technological",
+//armoryBag.weapons.requests(tremion)
+"Auto-Rifle","Overpowered Machine Pistol","Overpowered Pistol","Overpowered Rifle","Rifle",
+//armoryBag.weapons.immersiveWeapons
+"Axe","Bastard","Bat","Baton","Claymore","Club","Dagger","Double Blade War Axe",
+"Hammer","Hatchet","Hook sword","Knife","Long Sword","Mace","Machete",
+"Medival polearm","Pipe","Saber","Sai","short Katana",
+//kodachi
+"Swallow","Sword","sword","Tomahawk","Tonfa",
+//Suikoden 2 nostolgia
+"Trident","War Axe","War Hammer",
+//armoryBag.weapons.weapon_melee_types
+"Longsword",
+//armoryBag.weapons.USE
+"Ship Cannon","Self-Loading Rifle","Mortar","Marksman Rifle","LMG","Light Machinegun",
+"It's a fucking minigun","Heavy Rifle","D.M.R","Battle Rifle","Anti-Typhon",
+"Anti-Tank","Anti-Tank Rifle","Anti-Typhon","Carbine","Heavy Assault Gun",
+"Riot Baton","Stockless Assault Rifle","Submachine Gun",
+//armoryBag.weapons.tactical_weapons
+"mineLauncher",
+//armoryBag.weapons.Azure's_Star_Wars
+"Blaster Carbine","Blaster Pistol","Blaster Rifle",
+//armoryBag.weapons.Elithan_races
+"Bomb","Burst Rifle","Combat Rifle","Courser Rifle","Crook","Directed Energy Rifle",
+"Electric Prod","Electric Spear","Elemental Rifle","Flux Launcher","Flux Rifle",
+"Frost Cannon","Gravity Distortion Rifle","Hand Cannon","Harpoon Gun","Heavy Bow",
+"Heavy Jumprifle","Heavy Line Rifle","Hunting Knife","Hunting Spear","Hologram",
+"Ion Cannon","Jumpcannon","Jumpgun","Jumprifle","Jumpsniper","Laser Cannon",
+"Laser Pistol","Laser Rifle","Laser Shotgun","Laser Sniper","Laser Targeting System",
+"Line Cannon","Line Rifle","Line Staff","Linebow","Machinegun","Missile Pod",
+"Modified Jumprifle","Particle Accelerator","Prod","Prototype Weapon","Pulsar Pistol",
+"Sand Launcher","Shieldblade","Shock Baton","Shortbow","Sidearm","Skip Rifle",
+"Sonic Cannon","Submachinegun","Switchblade","Tendril",
+"Volley Launcher","Welding Torch","Wrench",
+//armoryBag.weapons.Weapon_Additions
+"Assault Rifle/Shotgun","Experimental Weapon","Fist","Gas Gun","Gauss Weapon",
+"Icethrower","Laser Weapon","Lightiningthrower","Poisonthrower",
+//armoryBag.armor
+"chestarmour","headarmour","legarmour","backwear","chestwear","headwear",
+"legwear","enviroProtectionPack",
+//armoryBag.weapons.Weapon_Additions
+"Assault Rifle/Shotgun","Experimental Weapon","Fist","Gas Gun","Gauss Weapon",
+"Icethrower","Laser Weapon","Lightiningthrower","Poisonthrower",
+//armoryBag.armor.FU
+"armor","^#e43774;Upgradeable Armor^reset;","legsarmour","headarmor","chestarmor",
+"legarmor","t1armor","t1armoru","t2armor","t2armoru","t3armor","t3armoru",
+"t4armor","t4armoru","t5armor","t5armoru","t6armor","t6armoru","t7armor",
+"t7armoru","t8armor","t8armoru","t9armor","t9armoru","t10armor","t10armoru",
+//"Order Robes",
+//armoryBag.USCM
+"Functional Headwear",
+//armoryBag.modifiers
+"clothingDye","eppAugment","^#e43774;Upgradeable EPP^reset;"]
+},
+"materialBag" : {
+/*++++++++++++++++++++++++++++++++++++++++BLOCKS+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+//"typeWhitelist" : [ "material" ],
+"categoryWhitelist" : ["block","Block", "Crafted Block", "Building Block", "Natural Block"]
+},
+"objectBag" : {
+/*++++++++++++++++++++++++++++++++++++++++FURNITURE+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+//"typeWhitelist" : [ "object","material" ],
+"categoryWhitelist" : ["furniture","platform","door","supports"]
+},
+"objectBag2" : {
+/*++++++++++++++++++++++++++++++++++++++++DECORATIONS+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+//"typeWhitelist" : [ "object" ], <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< <<<
+"categoryWhitelist" : [ "actionFigure","artifact","bug","decorative",
+"generic","other","--todo--","pot"],
+"categoryBlacklist" : ["spawner","platform","breakable","other"]
+
+// "categoryBlacklist" : [ "crafting","furniture","door","railPoint","storage","fridgeStorage","shippingContainer",
+//"techManagement","teleporter","teleportMarker","wire","Wire","trap","genboss",
+//"spawner","Spawner","terraformer","Database","tool","Machine","^orange;Extraction Device^reset;",
+//farmBag 
+//"seed","sapling","farmBeastEgg","farmBeastFood","farmBeastFeed","petfood",
+//"playerstation","^orange;Convert Erchius to Superfuel^reset;","Smart Box"],*/
+
+},
+"reagentBag" : {
+/*++++++++++++++++++++++++++++++++++++++++CRAFTING MATERIALS+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"tagWhitelist" : [ "reagent" ],
+"tagBlacklist" : [ "salvage" ],
+"categoryBlacklist" : ["Smart Box","container","storagenet.storage","storagenet","digitalstorage","fridgeStorage","storage",
+"storagetransport","cookingIngredient","preparedFood","food","drink","foodJunk","A.I. Chip","Drone Booting Platform",
+"sharkdrone","Component","Upgrade Chip","mechPart","salvageComponent","upgradeComponent","vehicleController",
+"^orange;Matter Synthesiser^white;","Material Can","Nebulizer Module" ]
+// "categoryWhitelist" : [ "craftingMaterial","craftingIngredient","artifact", "" ]
+},
+"foodBag" : {
+/*++++++++++++++++++++++++++++++++++++++++FOOD+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : [
+//foodBag
+"cookingIngredient","preparedFood","food","drink","foodJunk","Brewery"]
+//"categoryBlacklist" : [ ]
+},
+"farmBag" : {
+/*++++++++++++++++++++++++++++++++++++++++FARMING+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : [
+//farmBag
+"dragonpet","farmable","petchocobo","pigMFM","farmBeastEgg","farmBeastFeed","farmBeastFood","farmingEquipment","petfood",
+"pigMFMbaby","sapling","pets","seed","gardenfence" ],
+//"categoryBlacklist" : [ ],
+"tagBlacklist" : [ "reagent", "salvage" ] //fix
+},
+"hobbyBag" : {
+/*++++++++++++++++++++++++++++++++++++++++MUSIC & DOCUMENTS+++++++++++++++++++++++++++++++++++++++++*/
+//"typeWhitelist" : ["codex","instrument"]
+"categoryWhitelist" : [ "spawner","Recipe Book", "book","Note Object",
+//hobbyBag
+"musicalInstrument","codex","largeFossil","mediumFossil","smallFossil","tradingCard","trophy","Trophy","fishingRod","fishingLure",
+"fishingReel","blueprint","Blueprint","Memory",
+//Elithian Races
+"Contract","Security Pass","Crafting Guide","Quest Item","quest","Sellable",
+//other
+"Special Sellable"]
+
+},
+"vehicleBag" : {
+/*++++++++++++++++++++++++++++++++++++++++COMPONENTS+++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : [ "A.I. Chip","Drone Booting Platform","sharkdrone","Component","Upgrade Chip","mechPart",
+"salvageComponent","upgradeComponent","vehicleController" ]
+},
+"toolBag" : {
+/*++++++++++++++++++++++++++++++++++++++++TOOLS+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : [ "Unique Drill","bugnet","Matter Manipulator","Matter Reshaper","Mining Laser","MiningLaser",
+"Tool ^green;[R]","Tool","^#e43774;Upgradeable Tool^reset;","tools","tool","Tools","upgradeableTool","parasol","detector",
+"relocator","translocator","mechrepairtool","^orange;Matter Synthesiser^white;","Material Can","Nebulizer Module" ] 
+},
+"liquidBag" : {
+/*++++++++++++++++++++++++++++++++++++++++LIQUIDS+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"typeWhitelist" : [ "liquid" ]
+},
+"medsBag" : {
+/*++++++++++++++++++++++++++++++++++++++++MEDICAL SUPPLIES+++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : [ "medicine"]
+},
+"augmentsBag" : {
+/*++++++++++++++++++++++++++++++++++++++++AUGMENTS+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["Core Crystal", "enviroProtectionPack","^#e43774;Upgradeable EPP^reset;","eppAugment",
+"Creature Pod","petCollar"]
+},
+"transportBag" : {
+/*++++++++++++++++++++++++++++++++++++++++TRANSPORT+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["rail","railPlatform","railPoint","teleportMarker","teleporter"]
+},
+"moneyBag" : {
+/*++++++++++++++++++++++++++++++++++++++++MONEY+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["Currency","currency"]
+},
+"throwBag" : {
+/*++++++++++++++++++++++++++++++++++++++++THROWABLE+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["ThrowableItem","Throwableitem","breakable","throwableItem"]
+},
+"armorBag" : {
+/*++++++++++++++++++++++++++++++++++++++++ARMOR+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryBlacklist" : [],
+"categoryWhitelist" : ["Functional Headwear","^#e43774;Upgradeable Armor^reset;","armor","backwear", "chestarmor","chestarmour",
+"chestwear","headarmor","headarmour","headwear","legarmor", "legarmour","legsarmour","legwear","t10armor", "t10armoru", 
+"t1armor","t1armoru","t2armor","t2armoru","t3armor","t3armoru","t4armor","t4armoru","t5armor","t5armoru","t6armor","t6armoru",
+"t7armor","t7armoru","t8armor","t8armoru","t9armor","t9armoru","shield"]
+},
+"lightingBag" : {
+/*++++++++++++++++++++++++++++++++++++++++LIGHTING+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["light"]
+},
+"storageBag" : {
+/*++++++++++++++++++++++++++++++++++++++++STORAGE+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["storage","container","fridgeStorage","Smart Box"]
+},
+"digitalBag" : {
+/*++++++++++++++++++++++++++++++++++++++++DIGITAL+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["storagenet.storage","storagenet","digitalstorage","startech:digitalstorage","storagetransport",
+"Machinery"]
+},
+"deviceBag" : {
+/*++++++++++++++++++++++++++++++++++++++++DEVICE+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : [ "^orange;Extraction Device^reset;","^orange;Centrifuge^reset;","power.machine","Virtual Circuit Manager",
+"Galactic Shop","Galactic Market Event","Spawner","Spawner - interact","Spawner - wire","Apex Cookware","Avian Cookware","Basic Cookware",
+"Cookware","Crafting Station","Floran Cookware","Glitch Cookware","Hylotl Cookware","Idle Factories","Makeshift Cookware","Merchant",
+"Nano Cookware","Novakid Cookware","Old Cookware","Portable Shop","Refridgerated Apex Cookware","Refridgerated Avian Cookware",
+"Refridgerated Basic Cookware", "Refridgerated Glitch Cookware","Refridgerated Nanokid Cookware",	"Test Cookware","crafting","merchant",
+"terraformer","Refridgerated Cookware","Refridgerated Floran Cookware","Extracts Storage Matter","Modifies Storage Matter",
+"Reshapes Storage Matter","shippingContainer","station","techManagement","trap"]
+},
+"powerBag" : {
+/*++++++++++++++++++++++++++++++++++++++++POWERBAG+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+"categoryWhitelist" : ["power","power.gen","power.storage","power.transport","wire","Macrochip Data","wired","fuel" ]
+},
+"autoAddToCustomBar" : {
+/*++++++++++++++++++++++++++++++++++++++++autoAddToCustomBar++++++++++++++++++++++++++++++++++++++++++++*/
+"typeWhitelist" : [
+"liquid","material", "object", "miningtool","flashlight","harvestingtool","tillingtool","consumable","blueprint","codex","instrument", 
+"thrownitem","unlockitem","activeitem"],
+"categoryBlacklist" : [ "food" ]
+
+
+
+
+
+
+
+
+}
+}
+}
+],
+
+[
+{
+"op" : "test",
+"path" : "/modEnvironment",
+"inverse" : true
+},
+{
+"op" : "add",
+"path" : "/modEnvironment",
+"value" : {}
+}
+],
+
+[
+{
+"op" : "add",
+"path" : "/modEnvironment/carlucci_inventory",//in case it would be useful to know
+"value" : true
+}
+]
+]

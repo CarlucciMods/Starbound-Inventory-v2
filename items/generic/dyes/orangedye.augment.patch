@@ -1,0 +1,10 @@
+[
+
+  {
+    "op": "add",
+    "path": "/itemTags",
+    "value": [ "reagent" ]
+  }
+
+]
+

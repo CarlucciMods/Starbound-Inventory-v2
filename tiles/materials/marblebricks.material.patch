@@ -1,0 +1,13 @@
+[
+  {
+    "op" : "add",
+    "path" : "/category",
+    "value" : "block"
+  },
+  {
+    "op": "add",
+    "path": "/itemTags",
+    "value" : [ "tagblock" ]
+  }
+
+]
